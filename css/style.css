@@ -438,7 +438,7 @@ html {
 
 
 #section102{
-  height: 200vh;
+  height: 210vh;
   width: 100%;
   position: relative;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.623), black);
@@ -654,6 +654,7 @@ button:hover svg {
   width: 165px;
   margin-top: 40px;
 }
+
 .component5 img{
   margin: 0;
   z-index: 999;
@@ -661,12 +662,13 @@ button:hover svg {
   position: absolute;
   top: 1000px;
   width: 1700px;
-  height: 900px;
+  height: 800px;
 }
 
 @media only screen and (max-width: 720px){
  #section102{
    display: none;
+   height: 0;
  }
 }
 
@@ -1298,14 +1300,18 @@ width: 30%;
   .flipper_desktop{
     display: none;
   }
+  
+#slider_104{
+  height: 70vh;
+}
   .cards_mobile {
-    width: 400px;
+    width: 100%;
     height: 300px;
     display: block;
     position: absolute;
     left: 0;
     right: 0;
-    top: 30%;
+    top: 40%;
     margin: auto;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -1313,175 +1319,125 @@ width: 30%;
  
   .cards_mobile h1 {
     margin: 0;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
-    font-weight: 200;
-    color: #A4C9EF;
-    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
   }
-  .cards_inner {
-    -webkit-perspective: 800px;
-            perspective: 800px;
+  [data-am-cardslider] {
+    overflow: hidden;
+    padding: 15px 30px;
+  }
+  [data-am-cardslider] input[type='radio'] {
+    position: fixed;
+    top: -9999px;
+    visibility: hidden;
+  }
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(1) ~ .cs-slide-container .cs-slide:nth-child(1) {
+    -webkit-transform: translate(0) scale(1);
+            transform: translate(0) scale(1);
     position: relative;
-    top: 60px;
+    cursor: default;
+    z-index: 3;
   }
-  .cards_inner .wrap {
-    width: 220px;
-    margin: 0 auto;
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(1) ~ .cs-slide-container .cs-slide:nth-child(0) {
+    -webkit-transform: translate(-100px) scale(0.85);
+            transform: translate(-100px) scale(0.85);
+    z-index: 2;
+  }
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(1) ~ .cs-slide-container .cs-slide:nth-child(2) {
+    -webkit-transform: translate(100px) scale(0.85);
+            transform: translate(100px) scale(0.85);
+    z-index: 2;
+  }
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(1) ~ .cs-slide-container .cs-slide:nth-child(n+3) {
+    -webkit-transform: translate(210px) scale(0.65);
+            transform: translate(210px) scale(0.65);
+    z-index: 1;
+  }
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(1) ~ .cs-indicator-container .cs-indicator:nth-child(1) {
+    background-color: #00ECE1;
+  }
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(2) ~ .cs-slide-container .cs-slide:nth-child(2) {
+    -webkit-transform: translate(0) scale(1);
+            transform: translate(0) scale(1);
     position: relative;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    cursor: default;
+    z-index: 3;
   }
-  .cards_inner .invalid {
-    pointer-events: none;
-    left: -180px !important;
-    opacity: 0;
-    -webkit-transition: all .23s;
-    transition: all .23s;
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(2) ~ .cs-slide-container .cs-slide:nth-child(1) {
+    -webkit-transform: translate(-100px) scale(0.85);
+            transform: translate(-100px) scale(0.85);
+    z-index: 2;
   }
-  .cards_inner .animate {
-    -webkit-transition: all 0.2s cubic-bezier(0.56, 2.15, 0.25, 0.715);
-    transition: all 0.2s cubic-bezier(0.56, 2.15, 0.25, 0.715);
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(2) ~ .cs-slide-container .cs-slide:nth-child(3) {
+    -webkit-transform: translate(100px) scale(0.85);
+            transform: translate(100px) scale(0.85);
+    z-index: 2;
   }
-  .cards_inner .card_in {
-    opacity: 0;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    margin-top: 40px;
-    -webkit-animation: pop 0.6s 0.1s cubic-bezier(0.56, 1.75, 0.25, 0.715);
-            animation: pop 0.6s 0.1s cubic-bezier(0.56, 1.75, 0.25, 0.715);
-    right: 0;
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(2) ~ .cs-indicator-container .cs-indicator:nth-child(2) {
+    background-color: #00ECE1;
   }
-  @-webkit-keyframes pop {
-    0% {
-      margin-top: 40px;
-      opacity: 0;
-    }
-    100% {
-      margin-top: 0px;
-      opacity: 1;
-    }
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(3) ~ .cs-slide-container .cs-slide:nth-child(3) {
+    -webkit-transform: translate(0) scale(1);
+            transform: translate(0) scale(1);
+    position: relative;
+    cursor: default;
+    z-index: 3;
   }
-  @keyframes pop {
-    0% {
-      margin-top: 40px;
-      opacity: 0;
-    }
-    100% {
-      margin-top: 0px;
-      opacity: 1;
-    }
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(3) ~ .cs-slide-container .cs-slide:nth-child(2) {
+    -webkit-transform: translate(-100px) scale(0.85);
+            transform: translate(-100px) scale(0.85);
+    z-index: 2;
   }
-  .cards_inner .card_in_two {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    margin-top: 40px;
-    -webkit-transition: all 0.2s cubic-bezier(0.56, 2.15, 0.25, 0.715);
-    transition: all 0.2s cubic-bezier(0.56, 2.15, 0.25, 0.715);
-    margin-top: 0px;
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(3) ~ .cs-slide-container .cs-slide:nth-child(-n+1) {
+    -webkit-transform: translate(-210px) scale(0.65);
+            transform: translate(-210px) scale(0.65);
+    z-index: 1;
   }
-  .cards_inner__card {
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.56, 2.15, 0.25, 0.715);
-    transition: -webkit-transform 0.2s cubic-bezier(0.56, 2.15, 0.25, 0.715);
-    transition: transform 0.2s cubic-bezier(0.56, 2.15, 0.25, 0.715);
-    transition: transform 0.2s cubic-bezier(0.56, 2.15, 0.25, 0.715), -webkit-transform 0.2s cubic-bezier(0.56, 2.15, 0.25, 0.715);
+  [data-am-cardslider] input[type='radio']:checked:nth-of-type(3) ~ .cs-indicator-container .cs-indicator:nth-child(3) {
+    background-color: #00ECE1;
+  }
+  [data-am-cardslider] .cs-slide-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  [data-am-cardslider] .cs-slide {
     position: absolute;
-    margin-top: 0px;
+    top: 0;
     left: 0;
-    right: 0;
-    background: -moz-linear-gradient(top, white 0%, #f7f7f7 100%);
-    top: 50%;
-    margin: auto;
-    width: 220px;
-    height: 130px;
-    background: -webkit-linear-gradient(top, white 0%, #f7f7f7 100%);
-    border-radius: 12px;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.22);
+    display: block;
+    width: 100%;
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
     cursor: pointer;
   }
-  .cards_inner__card:nth-of-type(1) {
-    top: 10px;
-    -webkit-transform: translateZ(-180px);
-            transform: translateZ(-180px);
-  }
-  .cards_inner__card:nth-of-type(2) {
-    top: 20px;
-    -webkit-transform: translateZ(-120px);
-            transform: translateZ(-120px);
-  }
-  .cards_inner__card:nth-of-type(3) {
-    top: 30px;
-    -webkit-transform: translateZ(-60px);
-            transform: translateZ(-60px);
-  }
-  .cards_inner__card:nth-of-type(4) {
-    top: 40px;
-    -webkit-transform: translateZ(0px);
-            transform: translateZ(0px);
-  }
-  
-  .maestro .logo {
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MasterCard_logo.png/640px-MasterCard_logo.png");
-  }
-  
-  .paypal .logo {
-    background: url("https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png?01AD=3B28EURZY9Emi4KsrC-JAvZqhykcobygL70miwLcjbS3qGuX1m1ZgsQ&01RI=08D0AE0331EC9B2&01NA=");
-    left: 58px;
-    background-size: contain !important;
-    top: 49px;
-  }
-  
-  .cards_mobile .logo {
-    width: 100px;
-    height: 70px;
-    position: relative;
-    background-repeat: no-repeat !important;
-    left: 62px;
-    background-size: contain !important;
-    top: 29px;
-  }
-  
-  .mastercard .logo {
-    left: 73px;
-    background-size: contain !important;
-    top: 44px;
-    width: 70px;
-    height: 70px;
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Maestro_2016.svg/1200px-Maestro_2016.svg.png");
-  }
-  
-  .visa .logo {
-    left: 58px;
-    background-size: contain !important;
-    top: 45px;
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2000px-Visa_Inc._logo.svg.png");
-  }
-  
-  .points {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100px;
-    top: 50%;
-    height: 0px;
-  }
-  .points .active {
-    background: #245484;
-  }
-  .points_point {
-    float: left;
-    width: 8px;
-    display: inline-block;
+  [data-am-cardslider] .cs-slide-content {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    height: 8px;
-    background: #00ECE1;
-    margin-right: 4px;
-    position: relative;
-    top: 156px;
-    left: 35px;
   }
+  [data-am-cardslider] .cs-indicator-container {
+    text-align: center;
+  }
+  [data-am-cardslider] .cs-indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-top: 30px;
+    border-radius: 50%;
+    background-color: #CCC;
+    cursor: pointer;
+    -webkit-transition: background-color 150ms ease;
+    transition: background-color 150ms ease;
+  }
+  
   
 }
 
@@ -1601,7 +1557,27 @@ width: 30%;
   width: 150px;  
 }
 
+@media only screen and (max-width: 720px){
+  #counter_105{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
 
+  .presence_105  .small_area105 h1{
+    float: none;
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+  }
+  .presence_105  .grad-bar{
+    display: none;
+  }
+  .presence_105 img{
+    width: 250px;
+  }
+}
 
 /* <------------------------FOOTER--------------------------> */
 
@@ -1623,7 +1599,7 @@ footer {
   margin: auto;
 }
 .footer-wrap .about_foot{
-  width: 35%;
+  width: 30%;
 }
 .footer-wrap .about_foot img{
   width: 30%;
@@ -1636,20 +1612,48 @@ footer {
 }
 .foot_right{
   display: flex;
-  float: left;
-  width: 60%;
+  float: right;
+  width: 90%;
   margin-left: 350px;
 }
 .footer-wrap h4{
   color: #00ECE1;
-  text-decoration: underline;
 }
 .info-links{
   padding: 0 50px;
+  width: 30%;
 }
 .help-links{
-  padding: 0 50px;
+  padding-left: 50px;
+  width: 40%;
 }
 .contact_foot{
   padding: 0 50px;
+  width: 30%;
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 720px){
+  footer{
+    padding: 10px;
+  }
+  .footer-wrap{
+    display: none;
+  }
+  .head_flexItem{
+    display: flex;
+  }
+  .head_flexItem img{
+    width: 30%;
+    height: 40px;
+  }
+  .head_flexItem .head_contact{
+    float: right;
+    margin-left: 50px;
+  }
+  .head_flexItem .head_contact a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
 }
