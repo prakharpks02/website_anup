@@ -59,12 +59,80 @@
       <div class="bg_text">
       <h1>Let us handle your deliveries</h1> <br>
       <h5>Don’t just send a courier, Deliver an experience! <br> With our Reliable, Convenient and Cost-Effective Delivery</h5> <br><br>
-      <a href="#">Request a Quote</a> 
+      <a href="#" onclick="on()">Request a Quote</a> 
       <div class="grad-bar"></div>
       <img src="images/TmosMockup.png" class="comp_mobile" alt="">
       
       </div>
-    
+
+      <div id="homeOverlay"> 
+        <div id="overlay_container">
+          <i class="fa fa-times"  style="font-size: 50px; background-color: #fff; text-align: center; border: 5px solid #00ECE1; font-weight: lighter; border-radius: 50%; width: 65px; color: #00ECE1; margin-left: 1320px; margin-top: -50px; z-index: 9999" onclick="off()"></i>
+
+          <div class=wrapper>
+
+            <div class=left>
+              <ul id="step-menu">
+            <li class="from_address  active">
+              <div style="margin-left: 20px;">
+                <p>From</p> <br>
+                <div class="inputField_fromAddress">
+                  <input type="text" placeholder="Address" style="margin-bottom: 15px;">
+                  <div>
+                    <select name="" id="" style="width: 240px;">
+                      <option value="0">Select Country</option>
+                    </select>
+                    <input type="text" placeholder="PINCODE" style="width: 240px; height: 50px; border-radius: 10px; margin-right: 20px;">
+                  </div>
+                </div>
+              </div>
+            </li>       
+            <li class="to_address">
+              <div style="margin-left: 20px;">
+                <p>Destination</p> <br>
+                <div class="inputField_fromAddress">
+                  <input type="text" placeholder="Address" style="margin-bottom: 15px;">
+                  <div>
+                    <select name="sdfef" id="" style="width: 240px;">
+                      <option value="0">Select Country:</option>
+                    </select>
+                    <input type="text" placeholder="PINCODE" style="width: 240px; height: 50px; border-radius: 10px; margin-right: 20px;">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="package_info">
+              <div style="margin-left: 20px;">
+                <p>Package info</p> <br>
+                <div class="inputField_fromAddress">
+                  <div style="display: flex;">
+                  <input type="text" placeholder="Address" style="width: 280px; margin-right: 10px;">
+                  <input type="text" placeholder="Address" style="width: 100px; margin-right: 10px;"> 
+                  <input type="checkbox" name="Fragile" id="" style="width: 90px; margin-right: 10px;">
+                </div>
+                </div>
+              </div>
+            </li>
+            <li class="delivery_date">
+              <div style="margin-left: 20px;">
+                <p>Delivery Slot</p> <br>
+                <div class="inputField_fromAddress">
+                  <div style="display: flex;">
+                    <select name="sdfef" id="" style="width: 240px; margin-right: 20px;">
+                      <option value="0">Select Country:</option>
+                    </select>
+                    <select name="sdfef" id="" style="width: 240px;">
+                      <option value="0">Select Country:</option>
+                    </select>
+                </div>
+                </div>
+              </div>
+            </li>
+          
+          </ul>
+            </div>
+          </div>
+
     </section>
 
 
@@ -397,7 +465,31 @@
           <a href=""><i class="fa fa-envelope" aria-hidden="true" style="color: #00ECE1; font-size: 20px; padding-right: 5px;"></i >prakhar@tmos.global</a>
         </div>
       </div>
-      <p style="margin-top: 20px; font-size: 14px; letter-spacing: 1px;">TMoS is an Intelligent Hyperlocal Delivery Platform, serving and helping small business owners by providing them Delivery Service.</p>
+      <p style="margin-top: 20px; font-size: 13px; letter-spacing: 1px;">TMoS is an Intelligent Hyperlocal Delivery Platform, serving and helping small business owners by providing them Delivery Service.</p>
+
+
+      <div class="flex_mobileLinks">
+
+        <div class="info-links">
+          <h4>Information</h4>
+          <a href="#">About TMoS</a>
+          <a href="#">Blog</a>
+          <a href="#">Testimonials</a>
+          <a href="#">Partners</a>
+          <a href="#">Media Coverage</a>
+        </div>
+
+        <div class="help-links">
+          <h4>Helpful Links</h4>
+          <a href="#">Services</a> <br>
+          <a href="#">Supports</a> <br>
+          <a href="#">Terms and Conditions</a> <br>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+      </div> <br>
+
+
     </div>
     <div style="margin: 0 0px;">
     <hr> <br>
@@ -420,5 +512,6 @@
     <script src="js/slider.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/emailValidation.js"></script>
+    <script src="js/homeOverlay.js"></script>
 </body>
 </html>
