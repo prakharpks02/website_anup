@@ -1826,7 +1826,9 @@ border-radius: 10px;
 }
 
 #overlay_container input[type="checkbox"]{
-
+  width: 20px;
+  height: auto;
+  margin-left: 20px;
 }
 
 #overlay_container select{
