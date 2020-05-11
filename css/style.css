@@ -541,7 +541,7 @@ svg {
   transition: transform 0.25s ease, width 0.25s ease, -webkit-transform 0.25s ease;
 }
 
-input[type="text"] {
+#section102 input[type="text"] {
   width: 90%;
   height: 60px;
   float: left;
@@ -554,7 +554,7 @@ input[type="text"] {
   border-radius: 19px;
 }
 
-button {
+#section102 button {
   position: absolute;
   right: 30px;
   width: 12%;
@@ -567,7 +567,7 @@ button {
   transition: width 0.1s ease;
   border-radius: 15px;
 }
-button .send {
+#section102 button .send {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -579,17 +579,17 @@ button .send {
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
-button:hover {
+#section102 button:hover {
   width: 26%;
 }
-button:hover .send {
+#section102 button:hover .send {
   opacity: 1;
 }
-button:hover .divider {
+#section102 button:hover .divider {
   -webkit-animation: divider 0.15s 0.2s linear forwards;
           animation: divider 0.15s 0.2s linear forwards;
 }
-button:hover svg {
+#section102 button:hover svg {
   width: 23px;
   -webkit-transform: rotate(-18deg) translateX(10px) translateY(3px);
           transform: rotate(-18deg) translateX(10px) translateY(3px);
@@ -1709,7 +1709,6 @@ footer {
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
-  cursor: pointer;
 }
 
 
@@ -1723,6 +1722,15 @@ footer {
   left: 50%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+}
+
+#overlay_container .left button{
+ margin-left: 250px;
+ padding: 10px 20px;
+ background-color: #23D5AB;
+ border: none;
+ border-radius: 20px;
+ cursor: pointer;
 }
 
 
@@ -1765,7 +1773,7 @@ footer {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   padding: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   vertical-align: middle;
   font-family: sans-serif;
   font-weight: bold;
@@ -1815,7 +1823,7 @@ footer {
   width: 600px;
 }
 
-#overlay_container input{
+#overlay_container input[type="text"]{
   width: 500px;
   height: 50px;
   -webkit-box-shadow: 6px 4px 5px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -1823,6 +1831,20 @@ footer {
   box-shadow:         6px 4px 5px 2px #ccc; 
 border: none;
 border-radius: 10px;
+outline: none;
+padding-left: 5px;
+}
+
+#overlay_container input[type="number"]{
+  width: 500px;
+  height: 50px;
+  -webkit-box-shadow: 6px 4px 5px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    6px 4px 5px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         6px 4px 5px 2px #ccc; 
+border: none;
+border-radius: 10px;
+outline: none;
+padding-left: 5px;
 }
 
 #overlay_container input[type="checkbox"]{
@@ -1872,8 +1894,9 @@ outline: none;
 }
 
 #overlay_container .wrapper {
-  width: 800px;
- padding: 20px 50px;
+  width: 100%;
+ padding:5px 50px;
+ display: flex;
 }
 
 #overlay_container .wrapper::after {
@@ -1891,4 +1914,90 @@ outline: none;
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
+}
+
+
+.overlayRight_container{
+  width: 50%;
+}
+
+.overlayRight_container .right_analytics{
+  width: 100%;
+  height: 570px;
+  margin: auto;
+}
+
+.cost_circle{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 15px solid #23D5AB;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.cost_circle h1{
+  text-align: center;
+  margin-top: 55px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+
+
+
+
+#chart {
+  width: 650px;
+  height: 300px;
+  margin-top: -320px;
+  display: block;
+  margin-left: 20px;
+}
+
+#chart #bars {
+  display: inline-block;
+  width: 600px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+
+}
+#chart #bars li {
+  display: table-cell;
+  width: 100px;
+  height: 300px;
+  margin: 0;
+  
+  text-align: center;
+  position: relative;
+}
+#chart #bars li .bar {
+  display: block;
+  width: 60px;
+  margin-left: 15px;
+  background-image: linear-gradient(to bottom right, #00ffc7, #5dc2ac);
+  position: absolute;
+  bottom: 0;
+  border-radius: 30px;
+  font-size: 20px;
+}
+#chart #bars li .bar:hover ~ span {
+  cursor: pointer;
+  color: black;
+}
+#chart #bars li .bar:hover:before {
+  color: black;
+  content: '₹' attr(data-percentage) ;
+  position: relative;
+  bottom: 20px;
+}
+#chart #bars li span {
+  color: #afafaf;
+  width: 100%;
+  position: absolute;
+  bottom: -2em;
+  left: 0;
+  text-align: center;
 }

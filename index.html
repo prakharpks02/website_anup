@@ -82,7 +82,7 @@
                     <select name="" id="" style="width: 240px;">
                       <option value="0">Select Country</option>
                     </select>
-                    <input type="text" placeholder="PINCODE" style="width: 240px; height: 50px; border-radius: 10px; margin-right: 20px;">
+                    <input type="number" placeholder="PINCODE" style="width: 240px; height: 50px; border-radius: 10px; margin-left: 20px;">
                   </div>
                 </div>
               </div>
@@ -96,7 +96,7 @@
                     <select name="sdfef" id="" style="width: 240px;">
                       <option value="0">Select Country:</option>
                     </select>
-                    <input type="text" placeholder="PINCODE" style="width: 240px; height: 50px; border-radius: 10px; margin-right: 20px;">
+                    <input type="number" placeholder="PINCODE" style="width: 240px; height: 50px; border-radius: 10px; margin-left: 20px;">
                   </div>
                 </div>
               </div>
@@ -108,7 +108,10 @@
                   <div style="display: flex;">
                   <input type="text" placeholder="Address" style="width: 280px; margin-right: 10px;">
                   <input type="text" placeholder="Weight" style="width: 100px; margin-right: 10px;"> 
-                 <div style="display: flex; margin-top: 20px;"> Fragile<input type="checkbox" name="Fragile" id="" placeholder="Fragile" style="margin-right: 10px;"></div>
+                 <div class="fragileBtn" style="display: flex; margin-top: 20px;"><label>
+                  <input type="checkbox" checked name="">
+                  <span>Fragile</span>
+                </label></div>
                 </div>
                 </div>
               </div>
@@ -119,18 +122,48 @@
                 <div class="inputField_fromAddress">
                   <div style="display: flex;">
                     <select name="sdfef" id="" style="width: 240px; margin-right: 20px;">
-                      <option value="0">Select Country:</option>
+                      <option value="0">Select Date</option>
                     </select>
                     <select name="sdfef" id="" style="width: 240px;">
-                      <option value="0">Select Country:</option>
+                      <option value="0">Select Date</option>
                     </select>
                 </div>
                 </div>
               </div>
+             
             </li>
-          
+            <button style="position: relative;">Calculate</button>
           </ul>
             </div>
+
+            <div class="overlayRight_container">
+              <p style="margin-left:50px; font-size: 20px;">Estimated Cost</p>
+             <div class="right_analytics">
+               <div class="cost_circle">
+                           <h1>₹75</h1>
+               </div>
+               <p style="text-align: center; margin-top: 5px;">Price Range: ₹60 - ₹90</p>
+             </div>
+             <div id="chart">
+              <p style="margin-left:30px; font-size: 18px;">This Week<p>
+  
+              <ul id="bars">
+                <li><div data-percentage="56" class="bar"></div><span>date 1</span></li>
+                <li><div data-percentage="33" class="bar"></div><span>date 2</span></li>
+                <li><div data-percentage="54" class="bar"></div><span>date 3</span></li>
+                <li><div data-percentage="94" class="bar"></div><span>date 4</span></li>
+                <li><div data-percentage="44" class="bar"></div><span>date 5</span></li>
+                <li><div data-percentage="23" class="bar"></div><span>date 6</span>
+                </li>
+                <li><div data-percentage="43" class="bar"></div><span>date 7</span>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+          </div>
+        
+          </div>
           </div>
 
     </section>
