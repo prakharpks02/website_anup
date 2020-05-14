@@ -16,6 +16,11 @@ html {
   a:active {
     text-decoration: none;
   }
+
+  button{
+    cursor: pointer;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -420,7 +425,6 @@ text-align: center;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
-  cursor: pointer;
 }
 
 #sandeep_overlay .sandeep_container{
@@ -470,7 +474,7 @@ text-align: center;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
-  cursor: pointer;
+ 
 }
 
 #love_overlay .love_container{
@@ -520,7 +524,6 @@ text-align: center;
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
-  cursor: pointer;
 }
 
 #ashirwad_overlay .ashirwad_container{
