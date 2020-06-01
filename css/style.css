@@ -1979,7 +1979,7 @@ outline: none;
 }
 #chart #bars li .bar {
   display: block;
-  width: 60px;
+  width: 55px;
   margin-left: 15px;
   background-image: linear-gradient(to bottom right, #00ffc7, #5dc2ac);
   position: absolute;

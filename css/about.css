@@ -521,17 +521,17 @@ html {
   from {
     margin-top: 0px;
   }
-  35% {
+  70% {
     margin-top: 0px;
   }
-  70% {
+  35% {
     margin-top: -36px;
   }
-  70% {
+  35% {
       margin-top: -36px;
     }
     to{
-      margin-top: -72px;
+      margin-top: 0px;
     }
 }
 .about_container p{

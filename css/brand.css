@@ -673,6 +673,117 @@ input[type="text"] {
 }
 
 
+.subscribe2 {
+  position: absolute;
+  width: 500px;
+  z-index: 9999;
+  left: 51%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+.subscribe__wrapper2 {
+  position: relative;
+  height: 50px;
+}
+
+.subscribe2 svg {
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  -webkit-transition: width 0.25s ease, -webkit-transform 0.25s ease;
+  transition: width 0.25s ease, -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease, width 0.25s ease;
+  transition: transform 0.25s ease, width 0.25s ease, -webkit-transform 0.25s ease;
+}
+
+input[type="text"] {
+  width: 90%;
+  height: 60px;
+  float: left;
+  border: 0;
+  outline: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.25em;
+  border: 1px solid #00ECE1;
+  border-radius: 19px;
+}
+
+.setup_bg button {
+  position: absolute;
+  right: 30px;
+  width: 12%;
+  height: 60px;
+  border: 0;
+  background: #5DC2AC;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: width 0.1s ease;
+  transition: width 0.1s ease;
+  border-radius: 15px;
+}
+.setup_bg button .send2 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+}
+.setup_bg button:hover {
+  width: 26%;
+}
+.setup_bg button:hover .send2 {
+  opacity: 1;
+}
+.setup_bg button:hover .divider2 {
+  -webkit-animation: divider2 0.15s 0.2s linear forwards;
+          animation: divider2 0.15s 0.2s linear forwards;
+}
+.setup_bg button:hover svg {
+  width: 23px;
+  -webkit-transform: rotate(-18deg) translateX(10px) translateY(3px);
+          transform: rotate(-18deg) translateX(10px) translateY(3px);
+  z-index: 10;
+}
+
+.setup_bg .divider2 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 50;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 10px;
+  height: 0;
+  background: #5DC2AC;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@-webkit-keyframes divider2 {
+  to {
+    height: 60%;
+  }
+}
+
+@keyframes divider2 {
+  to {
+    height: 60%;
+  }
+}
+.setup_bg #p22 {
+  opacity: 0;
+}
+
+
+
+
 
 
 /* <------------------------FOOTER--------------------------> */
