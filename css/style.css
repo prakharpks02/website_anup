@@ -87,6 +87,7 @@ html {
     background: none;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
+    z-index: 999;
   }
 
 
