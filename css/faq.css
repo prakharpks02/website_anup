@@ -488,6 +488,7 @@ html {
   outline: none;
   background-color: #00ffc7;
   height: 50px;
+  cursor: pointer;
 }
 
 #ask .ask_container .ask_right .input_search input{
