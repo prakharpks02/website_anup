@@ -328,7 +328,7 @@ html {
 
   /* Mobile Devices - Phones/Tablets */
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 1150px) { 
 
 
   #background{
@@ -352,7 +352,7 @@ html {
     color: black;
   }
   #background .bg_text h5{
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     font-weight: bold;
     color: black;
@@ -473,7 +473,7 @@ html {
     font-weight: bold;
   }
   #background .bg_text h5{
-    font-size: 9px;
+    font-size: 10px;
     text-align: center;
     font-weight: bold;
   } 
