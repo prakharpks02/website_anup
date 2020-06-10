@@ -95,7 +95,7 @@ html {
     color: #fff;
     font-weight: lighter;
   }
-  #background .bg_text a{
+  #background .bg_text .desk_reqBtn{
     text-decoration: none;
     border: 2px solid white;
     transition: 0.5s;
@@ -104,7 +104,7 @@ html {
     color: white;
     text-transform: none;
   }
-  #background .bg_text a:hover{
+  #background .bg_text .desk_reqBtn:hover{
     border: 2px solid #5DC2AC;
     color: #5DC2AC;
   }
@@ -325,17 +325,17 @@ html {
 
   /* Mobile Devices - Phones/Tablets */
 
-@media only screen and (max-width: 720px) { 
+@media only screen and (max-width: 768px) { 
 
 
   #background{
-    background: transparent linear-gradient(330deg, #0B7EBF 0%, #00ECE1 100%) 0% 0% no-repeat padding-box;
+    background: white;
     width: 100%;
   }
   #background .bg_text{
     width: 100%;
     height: auto;
-    padding-top: 180px;
+    padding-top: 130px;
     padding-left: 5px;
     padding-right: 5px;
     text-transform: capitalize;
@@ -346,16 +346,25 @@ html {
     font-size: 40px;
     text-align: center;
     font-weight: bold;
+    color: black;
   }
   #background .bg_text h5{
     font-size: 10px;
     text-align: center;
     font-weight: bold;
+    color: black;
   } 
-   #background .bg_text a:hover{
-    background-color: #5DC2AC;
-    color: #fff;
+  #background .bg_text .mobile_reqBtn{
+    color: black;
+    border-color: #00ECE1;
+    background-color: #00ECE1;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    text-transform: none;
+    text-decoration: none;
   }
+
   #background .bg_text .grad-bar{
     display: none;
   }
@@ -363,7 +372,8 @@ html {
     display: block;
     margin: auto;
     width: 350px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     padding-right: 25px;
   }
 
@@ -380,7 +390,7 @@ html {
       display: block;
      }
      .menu-toggle .bar{
-       background-color: #fff;
+       background-color: #00ECE1;
      }
   .navbar ul {
     display: flex;
