@@ -108,6 +108,9 @@ html {
     border: 2px solid #5DC2AC;
     color: #5DC2AC;
   }
+  #background .bg_text .mobile_reqBtn{
+    display: none;
+  }
   #background .bg_text .grad-bar{
     margin-top: 60px;
     width: 165px;
@@ -335,7 +338,7 @@ html {
   #background .bg_text{
     width: 100%;
     height: auto;
-    padding-top: 130px;
+    padding-top: 120px;
     padding-left: 5px;
     padding-right: 5px;
     text-transform: capitalize;
@@ -355,12 +358,14 @@ html {
     color: black;
   } 
   #background .bg_text .mobile_reqBtn{
+    display: inline-block;
     color: black;
+    width: 40%;
     border-color: #00ECE1;
     background-color: #00ECE1;
     border-radius: 10px;
+    padding: 10px 10px;
     font-weight: bolder;
-    padding: 10px 20px;
     text-transform: none;
     text-decoration: none;
   }
@@ -372,8 +377,8 @@ html {
     display: block;
     margin: auto;
     width: 350px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 
   }
 
@@ -401,7 +406,7 @@ html {
     height: 100vh;
     position: fixed;
     transform: translate(105%);
-    text-align: right;
+    text-align: left;
     transition: 0.7s;
     z-index: 999;
   }
@@ -460,7 +465,7 @@ html {
 }
 @media screen and (max-width: 360px){
   #background .bg_text{
-    padding-top: 140px;
+    padding-top: 100px;
   }
   #background .bg_text h1{
     font-size: 30px;
@@ -472,11 +477,22 @@ html {
     text-align: center;
     font-weight: bold;
   } 
-  #background .bg_text a{
-    font-size: 10px;
+  #background .bg_text .mobile_reqBtn{
+    display: inline-block;
+    width: 50%;
+    color: black;
+    border-color: #00ECE1;
+    background-color: #00ECE1;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    text-transform: none;
+    text-decoration: none;
   }
+
   #background .bg_text .comp_mobile{
-    width: 300px;
+    width: 220px;
+    margin-bottom: 50px;
   }
 }
 
