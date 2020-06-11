@@ -513,6 +513,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #background {
+    height: 100vh;
+  }
   #background .bg_text {
     padding-top: 140px;
   }
@@ -917,6 +920,12 @@ svg {
   }
   #section102 .component5{
     display: none;
+  }
+  #section102 .download_links102{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    padding-left: 30px;
   }
   #section102 .download_links102 .desk_section102{
     display: none;
