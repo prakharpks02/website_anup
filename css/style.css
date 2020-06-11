@@ -476,7 +476,7 @@ html {
     font-weight: bold;
   }
   #background .bg_text h5{
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
     font-weight: bold;
   } 
@@ -533,11 +533,11 @@ html {
     padding: 10px 20px;
     text-transform: none;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   #background .bg_text .comp_mobile{
-    width: 60%;
+    width: 65%;
     margin-bottom: 50px;
   
   }
