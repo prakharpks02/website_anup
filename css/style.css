@@ -947,7 +947,10 @@ svg {
     justify-content: center;
     width: 100%;
   }
-
+  #section102 .mobile_images102{
+    display: flex;
+    justify-content: center;
+  }
 #section102 .download_links102 .download_images102 img{
   width: 150px;
   margin-top: 20px;
@@ -959,10 +962,8 @@ svg {
 } */
   #section102 .mobile_images102 img{
     width: 500px;
-    position: absolute;
-    left: -150px;
-    top: 150px;
- 
+    margin-top: 200px;
+    padding-left: 40px;
   }
 
 }
