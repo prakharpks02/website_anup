@@ -899,7 +899,7 @@ svg {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   #section102{
     background: white;
-    height: 100vh;
+    height: 85vh;
     padding: 0;
     box-sizing: border-box;
     margin: 0;
