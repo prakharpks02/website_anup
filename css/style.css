@@ -358,6 +358,9 @@ html {
     color: black;
   } 
   #background .bg_text .mobile_reqBtn{
+    display: none;
+  }
+  #background .bg_text .mobile_reqBtn{
     display: inline-block;
     color: black;
     width: 40%;
@@ -478,6 +481,9 @@ html {
     font-weight: bold;
   } 
   #background .bg_text .mobile_reqBtn{
+    display: none;
+  }
+  #background .bg_text .mobile_reqBtn{
     display: inline-block;
     width: 50%;
     color: black;
@@ -488,12 +494,54 @@ html {
     padding: 10px 20px;
     text-transform: none;
     text-decoration: none;
+    font-size: 12px;
   }
 
   #background .bg_text .comp_mobile{
-    width: 220px;
+    width: 60%;
     margin-bottom: 50px;
+  
   }
+}
+
+@media screen and (min-height: 667px){
+
+  #background .bg_text{
+    padding-top: 120px;
+  }
+  #background .bg_text h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+  #background .bg_text h5{
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+  } 
+  #background .bg_text .mobile_reqBtn{
+    display: none;
+  }
+  #background .bg_text .mobile_reqBtn{
+    display: inline-block;
+    width: 50%;
+    color: black;
+    border-color: #00ECE1;
+    background-color: #00ECE1;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  #background .bg_text .comp_mobile{
+    width: 60%;
+    margin-bottom: 50px;
+  
+  }
+
 }
 
 
