@@ -925,7 +925,7 @@ svg {
     padding: 0;
     margin: 0;
     top: 0;
-    padding-left: 30px;
+
   }
   #section102 .download_links102 .desk_section102{
     display: none;
@@ -937,15 +937,20 @@ svg {
   }
   #section102 .download_links102 .mobile_section102 h1{
     font-size: 35px;
+    text-align: center;
   }
   #section102 .download_links102 .mobile_section102 p{
     font-size: 11px;
+    text-align: center;
+  }
+  #section102 .download_links102 .download_images102{
+    justify-content: center;
+    width: 100%;
   }
 
 #section102 .download_links102 .download_images102 img{
-  width: 120px;
+  width: 150px;
   margin-top: 20px;
-  display: block;
 }
 /* #section102 .download_links102 .download_images102 .appStore_section102{
   width: 120px;
@@ -956,7 +961,7 @@ svg {
     width: 500px;
     position: absolute;
     left: -150px;
-    top: 200px;
+    top: 150px;
  
   }
 
