@@ -514,7 +514,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   #background .bg_text {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
   #background .bg_text h1 {
@@ -528,6 +528,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-weight: bold;
     padding: 0 10px;
+    margin-bottom: 30px;
   }
 
   #background .bg_text .desk_reqBtn {
