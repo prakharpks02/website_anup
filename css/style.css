@@ -388,6 +388,10 @@ body::-webkit-scrollbar-thumb {
     color: black;
   }
 
+  #background .bg_text .desk_reqBtn {
+    display: none;
+  }
+
   #background .bg_text .mobile_reqBtn {
     display: inline-block;
     color: black;
@@ -514,15 +518,19 @@ body::-webkit-scrollbar-thumb {
   }
 
   #background .bg_text h1 {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     font-weight: bold;
   }
 
   #background .bg_text h5 {
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     font-weight: bold;
+  }
+
+  #background .bg_text .desk_reqBtn {
+    display: none;
   }
 
   #background .bg_text .mobile_reqBtn {
@@ -536,6 +544,7 @@ body::-webkit-scrollbar-thumb {
     padding: 10px 20px;
     text-transform: none;
     text-decoration: none;
+    font-size: 12px;
   }
 
   #background .bg_text .comp_mobile {
@@ -547,7 +556,35 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen
 and (max-width : 320px){
-  
+  #background .bg_text h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #background .bg_text h5 {
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #background .bg_text .desk_reqBtn {
+    display: none;
+  }
+
+  #background .bg_text .mobile_reqBtn {
+    display: inline-block;
+    width: 50%;
+    color: black;
+    border-color: #00ECE1;
+    background-color: #00ECE1;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 10px;
+  }
 }
 
 
