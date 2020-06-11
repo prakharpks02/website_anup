@@ -2060,6 +2060,7 @@ svg {
     font-size: 25px;
     position: relative;
     text-align: center;
+    float: none;
   }
 
   .presence_105 .grad-bar {
@@ -2068,7 +2069,7 @@ svg {
 
   .presence_105 img {
     width: 250px;
-    margin-top: -100px;
+    margin-top: -50px;
   }
 }
 
@@ -2085,12 +2086,14 @@ svg {
     margin: 0;
   }
   .presence_105 .small_area105 h1{
+    float: none;
+    text-align: center;
     width:100%;
     font-size: 18px;
   }
   .presence_105 img {
     width: 250px;
-    margin-top: -100px;
+    margin-top: -50px;
     margin-left: -50px;
   }
 }
