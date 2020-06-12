@@ -961,9 +961,10 @@ svg {
   margin-top: -0px;
 } */
   #section102 .mobile_images102 img{
-    width: 500px;
+    width: 800px;
+    height: 300px;
     margin-top: 200px;
-    padding-left: 50px;
+    margin-right: -60px;
   }
 
 }
@@ -1033,9 +1034,10 @@ svg {
   margin-top: -0px;
 } */
   #section102 .mobile_images102 img{
-    width: 500px;
+    width: 800px;
+    height: 300px;
     margin-top: 250px;
-    padding-left: 130px;
+    margin-right: -60px;
   }
 
 }
