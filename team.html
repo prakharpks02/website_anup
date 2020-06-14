@@ -16,7 +16,7 @@
            <div class="grad-bar"></div>
            <nav class="navbar">
              <img src="images/tmos_color.png" class="logo_desktop" alt="Company Logo">
-             <img src="images/TMos_Logo_A0_Rectangle_834_pattern@2x.png" class="logo_mobile" alt="Company Logo2">
+             <img src="images/tmos_color.png" class="logo_mobile" alt="Company Logo2">
              <div class="menu-toggle" id="mobile-menu" style="z-index: 1000;">
                <span class="bar"></span>
                <span class="bar"></span>
@@ -40,7 +40,7 @@
               </li><br>
                <li class="nav-item2"><a href="#">FAQ's</a></li>
                <li class="nav-item2"><a href="#">About TMoS</a></li>
-               <li class="nav-item2"><a href="#">Testimonial</a></li>
+               <li class="nav-item2"><a href="team.html">Our Team</a></li>
                <li class="nav-item2"><a href="#">Partners</a></li>
                <li class="nav-item2"><a href="#">Media Coverage</a></li> <br> 
                
@@ -67,19 +67,23 @@
       <div class="founding_team">
         <h1 style="text-align: center;">Co-Founding Team</h1>
          <div class="profile_details">
-          <div style="width: 300px; margin-right: 50px;">
-            <img src="images/Prakhar Profile Pic.png" style="width: 180px; height: 180px; border-radius: 50%; text-align: center; border: 2px solid #23D5AB;" alt="">
-            
+          <div class="prakhar_details">
+            <img src="images/Prakhar Profile Pic.png" alt="">
+            <div>
             <h3>Prakhar Kumar Singh</h3>
             <h5>Co-Founder & CEO</h5> <br>
             <a href="" style="background-color:#0e76a8;"><i class="fa fa-linkedin" style="color:white;  width:20px;"></i></a>
-          
           </div>
-          <div style="width: 300px; margin-left: 50px;">
-            <img src="images/Anish Profile Pic.jpg" style="width: 180px; height: 180px; border-radius: 50%; text-align: center; border: 2px solid #23D5AB;"  alt="">
+          </div>
+          <div class="anish_details" >
+            
+            <img src="images/Anish Profile Pic.jpg" style="margin-right: 10px;"   alt="">
+            <div>
             <h3>Anish Kumar Singh</h3>
             <h5>Co-Founder & CTO</h5> <br>
             <a href="" style="background-color:#0e76a8;"><i class="fa fa-linkedin" style="color:white;  width:20px;"></i></a>
+            </div>
+          
           </div>
          </div>
       </div>
@@ -92,11 +96,16 @@
         <div class="mentor_team">
           <h1 style="text-align: center;">Mentors</h1>
            <div class="mentor_details">
-            <div style="width: 300px; margin-right: 50px;">
+            <div class="sandeep_fullDevice" style="width: 300px; margin-right: 50px;">
 
-              <img src="images/sandeep_sir_greyscale.png" style="width: 180px; height: 180px;  border-radius: 50%; text-align: center; border: 2px solid #23D5AB;" alt="">
-              <button  onclick="on_sandeep()" style="display: inline-block; margin-right: 100px; margin-top: -40px; margin-left: 200px;"><i class="fa fa-angle-right"></i></button>
+               <div class="sandeep_detailsMobile">
+
+              <img src="images/sandeep_sir_greyscale.png" alt="">
+              <button  onclick="on_sandeep()"><i class="fa fa-angle-right"></i></button>
+              <div class="sandeep_mobileInner">
               <h3>Prof. Sandeep Kumar</h3>
+            </div>
+            </div>
               <div id="sandeep_overlay">
                 <div class="sandeep_container">
                   <button onclick="off_sandeep()"><i class="fa fa-times"></i></button>
@@ -127,11 +136,16 @@
               </div>
             
            
-            <div style="width: 300px; margin-right: 50px; margin-left: 50px;">
-              <img src="images/Love Sarin.jpg" style="width: 180px; height: 180px;  border-radius: 50%; text-align: center; border: 2px solid #23D5AB;" alt="">
-              <button onclick="on_love()" style="display: inline-block; margin-right: 100px; margin-top: -40px; margin-left: 200px;"><i class="fa fa-angle-right"></i></button>
+            <div class="love_fullDevice" style="">
+              <div class="love_detailsMobile">
+              <img src="images/Love Sarin.jpg" alt="">
+              <button onclick="on_love()"><i class="fa fa-angle-right"></i></button>
 
-              <h3>Dr. Love Sarin</h3>
+              
+              <div class="sandeep_mobileInner">
+                <h3>Dr. Love Sarin</h3>
+              </div>
+              </div>
               <div id="love_overlay">
                 <div class="love_container">
                   <button onclick="off_love()"><i class="fa fa-times"></i></button>
@@ -163,10 +177,15 @@
             
             </div>
             <div style="width: 300px; margin-left: 50px;">
-              <img src="images/Ashirwad-Tillu-BW_optimized.png" style="width: 180px; height: 180px; border-radius: 50%; text-align: center; border: 2px solid #23D5AB;"  alt="">
-            <button onclick="on_ashirwad()"  style="display: inline-block; margin-right: 100px; margin-top: -40px; margin-left: 200px;"><i class="fa fa-angle-right"></i></button>
-              <h3>Mr. Ashirwad Tillu</h3>
-
+              <div class="ashirwad_detailsMobile">
+              <img src="images/Ashirwad-Tillu-BW_optimized.png"  alt="">
+            <button onclick="on_ashirwad()"><i class="fa fa-angle-right"></i></button>
+              
+              <div class="sandeep_mobileInner">
+                <h3>Mr. Ashirwad Tillu</h3>
+                
+              </div>
+            </div>
               <div id="ashirwad_overlay">
                 <div class="ashirwad_container">
                   <button onclick="off_ashirwad()"><i class="fa fa-times"></i></button>
@@ -200,6 +219,48 @@
             </div>
            </div>
         </div>
+        <div class="mentor_mobileContainer">
+          <h1>Mentors</h1>
+          <div class="sandeep_mobiledata">
+            <img src="images/sandeep_sir_greyscale.png" alt="">
+            <div class="sandeep_addeddetails">
+              <h3>Prof. Sandeep Kumar</h3>
+              
+              <p>Prof. at Energy Science and <br> Engineering Dept. <br>
+                IIT Bombay
+               
+              </p>
+              <a href="" style="background-color:#0e76a8; margin-top: 5px;"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+
+
+
+          <div class="love_mobiledata">
+            <img src="images/Love Sarin.jpg" alt="">
+            <div class="love_addeddetails">
+              <h3>Dr. Love Sarin</h3>
+                
+                <p>Head IDEAS, DSCE, <br>
+                  IIT Bombay <br> <br>
+                
+                </p>
+                <a href="" style="background-color:#0e76a8;"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+
+
+          <div class="ash_mobiledata">
+            <img src="images/Ashirwad-Tillu-BW_optimized.png" alt="">
+            <div class="ash_addeddetails">
+              <h3>Mr. Ashirwad Tillu</h3>
+                
+              <p>Retired Senior VP, Reliance <br>  Industries
+              </p> <br>
+              <a href="" style="background-color:#0e76a8;"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
         <br> <br>  <hr></hr> <br> <br>
         </section>
 
@@ -209,27 +270,29 @@
           <div class="alpha_team">
             <h1 style="text-align: center;">The Alpha Team</h1>
              <div class="alpha_details">
-              <div style="width: 300px; margin-right: 50px;">
-                <img src="images/user_optimized.png" style="width: 180px; height: 180px; border-radius: 50%; text-align: center; border: 2px solid #23D5AB;" alt="">
-                
+              <div class="total_anshu" style="">
+                <img src="images/user_optimized.png" style="" alt="">
+                <div class="anshu_namedetails">
                 <h3>Anshu Gupta</h3>
                 <h5>Company Secretary</h5> <br>
                 <a href="" style="background-color:#0e76a8;"><i class="fa fa-linkedin" style="color:white;  width:20px;"></i></a>
-              
               </div>
-              <div style="width: 300px; margin-right: 50px; margin-left: 50px;">
-                <img src="images/user-1_optimized (1).png" style="width: 180px; height: 180px; border-radius: 50%; text-align: center; border: 2px solid #23D5AB;" alt="">
-                
+              </div>
+              <div  class="total_rohan" style="">
+                <img src="images/user-1_optimized (1).png" style="" alt="">
+                <div class="rohan_namedetails">
                 <h3>Rohan Kamath</h3>
                 <h5>UI/UX Designer</h5> <br>
                 <a href="" style="background-color:#0e76a8;"><i class="fa fa-linkedin" style="color:white;  width:20px;"></i></a>
-              
               </div>
-              <div style="width: 300px; margin-left: 50px;">
-                <img src="images/user-2_optimized (1).png" style="width: 180px; height: 180px; border-radius: 50%; text-align: center; border: 2px solid #23D5AB;"  alt="">
+              </div>
+              <div class="total_anup" style="">
+                <img src="images/user-2_optimized (1).png" style=""  alt="">
+                <div class="anup_namedetails">
                 <h3>Anup R</h3>
                 <h5>Front-End Developer</h5> <br>
                 <a href="" style="background-color:#0e76a8;"><i class="fa fa-linkedin" style="color:white;  width:20px;"></i></a>
+              </div>
               </div>
              </div>
           </div>
