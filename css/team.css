@@ -183,7 +183,7 @@ html {
 
 .nav-item2 a {
   display: none;
-  color: black;
+  color: white;
   font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
@@ -346,6 +346,7 @@ html {
   font-size: 0.7rem;
   float: right;
   font-weight: bolder;
+  color: white;
 }
 .nav-item3{
   display: flex;
@@ -418,6 +419,7 @@ html {
 
   .navbar .nav-item2 {
     padding: 5px 25px;
+    color: white;
   }
 
   .menu-toggle,
@@ -1105,6 +1107,9 @@ text-align: center;
   }
   .alpha_team{
     margin-top: 40px;
+  }
+  .alpha_team h1{
+    font-size: 16px;
   }
   #alpha .alpha_details{
     width: 100%;
