@@ -405,6 +405,7 @@ html {
   }
   
   .navbar .nav-item a {
+    color: white;
     font-size: 1.8rem;
     font-weight: bolder; 
     
@@ -736,25 +737,8 @@ html {
 
 /* MOBILE desktop_menu */
 
-@media only screen and (max-device-width: 520px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
 
-#about{
-  position: absolute;
-}
-.about_container{
-  top: 55%;
-}
-.title-wrap {
-  font-size: 24px;
-}
-.about_container p{
-  font-size: 13px;
-}
-.about_container p span{
-font-size: 30px;
-}
-}
-@media only screen and (max-device-height: 640px){
 #about{
   position: absolute;
 }
@@ -771,6 +755,25 @@ font-size: 30px;
 font-size: 30px;
 }
 }
+
+@media only screen and (max-width : 320px) {
+  #about{
+    position: absolute;
+  }
+  .about_container{
+    top: 75%;
+  }
+  .title-wrap {
+    font-size: 24px;
+  }
+  .about_container p{
+    font-size: 13px;
+  }
+  .about_container p span{
+  font-size: 30px;
+  }
+}
+
 
 
 
@@ -789,6 +792,7 @@ footer {
     height: 50vh;
     background-color: #0E0D11;
     top: 100vh;
+    z-index: -1;
   }
   
   .footer-wrap{
@@ -886,6 +890,74 @@ footer {
   
     }
   }
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    footer {
+      padding: 10px;
+      height: 75vh;
+      top: 1000px;
+    }
   
+    .footer_mobileWrap {
+      display: block;
+    }
+  
+    .footer-wrap {
+      display: none;
+    }
+  
+    .head_flexItem {
+      display: flex;
+    }
+  
+    .head_flexItem img {
+      width: 30%;
+      height: 40px;
+    }
+  
+    .head_flexItem .head_contact {
+      float: right;
+      margin-left: 50px;
+    }
+  
+    .head_flexItem .head_contact a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+    }
+  
+    .flex_mobileLinks {
+      display: flex;
+      margin-top: 20px;
+    }
+  
+    .flex_mobileLinks a {
+      text-decoration: none;
+      color: #fff;
+    }
+  
+    .flex_mobileLinks h4 {
+      color: #00ECE1;
+      margin-bottom: 10px;
+    }
+  
+    .flex_mobileLinks .info-links {
+      width: 30%;
+      margin-right: 75px;
+      margin-left: -50px;
+    }
+  
+    .flex_mobileLinks .help-links {
+      width: 70%;
+  
+    }
+  }
+  
+  @media only screen and (max-width : 320px){
+    footer {
+      padding: 10px;
+      height: 100vh;
+    }
+  
+  }
   
   
