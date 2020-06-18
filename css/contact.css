@@ -451,6 +451,7 @@ html {
     margin: 0;
     padding-top: 0px;
     overflow-x: hidden;
+
   }
 
   .navbar .logo_desktop {
@@ -643,7 +644,7 @@ html {
 }
 
 }
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 320px){
   #background{
     background: white;
     width: 100%;
