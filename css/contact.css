@@ -99,6 +99,7 @@ html {
     text-decoration: none;
     color: black;
     text-transform: none;
+    display: flex;
   }
   #background .bg_text a i{
     font-size: 50px;
@@ -324,7 +325,7 @@ html {
 
 
   #background{
-    background: transparent linear-gradient(330deg, #0B7EBF 0%, #00ECE1 100%) 0% 0% no-repeat padding-box;
+    background: white;
     width: 100%;
   }
   #background .bg_text{
@@ -393,6 +394,7 @@ html {
   
   .navbar .nav-item {
     padding: 10px 25px;
+    color: white;
   }
   
   .navbar li:first-child {
@@ -402,6 +404,7 @@ html {
   .navbar .nav-item a {
     font-size: 1.8rem;
     font-weight: bolder; 
+    color: white;
     
   }.navbar .nav-item2{
     padding: 5px 25px;
@@ -518,6 +521,49 @@ html {
     margin-left: -20px;
   }
 
+
+  #background{
+    background: white;
+    width: 100%;
+  }
+  #background .bg_text{
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  #background .bg_text h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+  #background .bg_text h5{
+    font-size: 15px;
+    padding: 0 15px;
+    text-align: center;
+    font-weight: lighter;
+  } 
+  #background .bg_text h5 br{
+    display: none;
+  }
+   #background .bg_text a{
+    display: none;
+  }
+  #background .bg_text .grad-bar{
+    display: none;
+  }
+  #background .bg_text .comp_mobile{
+    display: block;
+    margin: auto;
+    width: 250px;
+    margin-top: 0;
+    padding-right: 0px;
+  }
+
 }
 
 @media only screen and (max-width : 320px){
@@ -597,25 +643,47 @@ html {
 }
 
 }
-@media screen and (max-width: 360px){
-  #background .bg_text{
-    padding-top: 140px;
+@media only screen and (max-width: 360px){
+  #background{
+    background: white;
+    width: 100%;
   }
+  #background .bg_text{
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
   #background .bg_text h1{
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     font-weight: bold;
   }
   #background .bg_text h5{
-    font-size: 9px;
+    font-size: 13px;
+    padding: 0 20px;
     text-align: center;
-    font-weight: bold;
+    font-weight: lighter;
   } 
-  #background .bg_text a{
-    font-size: 10px;
+  #background .bg_text h5 br{
+    display: none;
+  }
+   #background .bg_text a{
+    display: none;
+  }
+  #background .bg_text .grad-bar{
+    display: none;
   }
   #background .bg_text .comp_mobile{
-    width: 300px;
+    display: block;
+    margin: auto;
+    width: 250px;
+    margin-top: 0;
+    padding-right: 0px;
   }
 }
 
@@ -634,10 +702,21 @@ html {
   display: flex;
   justify-content: center;
 }
+.flex_left{
+  margin-right: 15%;
+}
 
+.flex_left h1{
+ text-align: left;
+}
+
+.flex_left .text_contact{
+  text-align: left;
+ }
 .flex_left a{
   color: black;
   text-decoration: none;
+  display: flex;
 }
 
 .flex_left i{
@@ -645,13 +724,117 @@ html {
 }
 
 .flex_right a{
-  color: black;
-  text-decoration: none;
+  margin-left: 15%;
 }
+
+.flex_right h1{
+  text-align: left;
+  margin-left: 15%;
+ }
+ 
+ .flex_right .text_contact{
+   text-align: left;
+   margin-left: 15%;
+  }
+ .flex_right a{
+   color: black;
+   text-decoration: none;
+   display: flex;
+ }
 
 .flex_right i{
   color: #00ECE1;
 }
+
+.flex_mobile_container{
+  display: none;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  #contact_details{
+    background-color: white;
+    height: 50vh;
+    width: 100%;
+    border-bottom: none;
+  }
+ #contact_details .flex_container{
+   display: none;
+ }
+ .flex_mobile_container{
+  display: block;
+}
+.flex_mobile_container h1{
+  font-size: 25px;
+}
+.flex_mobile_container p{
+  font-size: 15px;
+}
+.sales_support{
+  text-align: center;
+}
+.sales_support a{
+  padding: 10px 20px;
+  width: 200px;
+  background-color: #00ECE1;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  
+}
+.technical_support{
+  text-align: center;
+}
+.technical_support a{
+  padding: 10px 10px;
+  width: 200px;
+  background-color: #00ECE1;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.flex_mobile_container a{
+  font-size: 15px;
+}
+}
+
+@media only screen and (max-width : 360px){
+  .flex_mobile_container h1{
+    font-size: 20px;
+  }
+  .flex_mobile_container p{
+    font-size: 13px;
+  }
+  .flex_mobile_container a{
+    font-size: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -825,6 +1008,107 @@ html {
   background-position: center;
 }
 
+.contact_mobile{
+  display: none;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  
+#contact_detailsBg{
+  display: none;
+}
+  .contact_mobile{
+    display: block;
+    height: 100vh;
+    width: 100%;
+  }
+  #message_tmos .contact_form {
+    display: none;
+  }
+
+  .contact_address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .contact_address h1{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .contact_address p i{
+    font-size: 17px;
+    color: #00ECE1;
+  }
+  .contact_msgarea{
+    width: 100%;
+    padding: 0 50px;
+
+  }
+  .contact_msgarea label{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contact_msgarea input{
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0 8px 6px -6px #00ECE1;
+	   -moz-box-shadow: 0 8px 6px -6px #00ECE1;
+	        box-shadow: 0 6px 6px -6px #00ECE1;
+  }
+  .contact_msgarea textarea{
+    height: 80px;
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0 8px 6px -6px #00ECE1;
+	   -moz-box-shadow: 0 8px 6px -6px #00ECE1;
+	        box-shadow: 0 6px 6px -6px #00ECE1;
+  }
+
+  .contact_msgarea input[type=checkbox]{
+    margin-top: 10px;
+  }
+  #checkbox_text{
+    display: flex; font-size: 13px; margin-top: 10px;
+  }
+  .contact_msgarea button{
+    background-color: #00ECE1;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 90px;
+  }
+}
+
+@media only screen and (max-width : 320px){
+  .contact_address h1{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+  .contact_address p{
+    font-size: 13px;
+  }
+  .contact_msgarea label{
+    font-size: 13px;
+  }
+  .contact_msgarea button{
+    margin-left: 70px;
+  }
+}
+
 
 
 /* <------------------------FOOTER--------------------------> */
@@ -938,3 +1222,73 @@ footer {
   }
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  footer {
+    padding: 10px;
+    height: 75vh;
+    z-index: -1;
+  }
+
+  .footer_mobileWrap {
+    display: block;
+  }
+
+  .footer-wrap {
+    display: none;
+  }
+
+  .head_flexItem {
+    display: flex;
+  }
+
+  .head_flexItem img {
+    width: 30%;
+    height: 40px;
+  }
+
+  .head_flexItem .head_contact {
+    float: right;
+    margin-left: 50px;
+  }
+
+  .head_flexItem .head_contact a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+
+  .flex_mobileLinks {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .flex_mobileLinks a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .flex_mobileLinks h4 {
+    color: #00ECE1;
+    margin-bottom: 10px;
+  }
+
+  .flex_mobileLinks .info-links {
+    width: 30%;
+    margin-right: 75px;
+    margin-left: -50px;
+  }
+
+  .flex_mobileLinks .help-links {
+    width: 70%;
+
+  }
+}
+
+@media only screen and (max-width : 320px){
+  footer {
+    padding: 10px;
+    height: 100vh;
+    z-index: -1;
+  }
+
+}
