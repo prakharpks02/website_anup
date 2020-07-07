@@ -289,6 +289,9 @@ html {
 
 
   /* MOBILE NAVIGATION */
+  .knowMore{
+    display: none;
+  }
      .navbar{
        margin: 0;
        padding-top: 0px;

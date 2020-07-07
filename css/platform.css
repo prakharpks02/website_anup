@@ -359,6 +359,9 @@ body::-webkit-scrollbar-thumb {
     background: transparent linear-gradient(330deg, #0B7EBF 0%, #00ECE1 100%) 0% 0% no-repeat padding-box;
     width: 100%;
   }
+  .knowMore{
+    display: none;
+  }
 
   #background .bg_text {
     width: 100%;

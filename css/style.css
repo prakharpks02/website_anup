@@ -426,6 +426,10 @@ body::-webkit-scrollbar-thumb {
     overflow-x: hidden;
   }
 
+  .knowMore{
+    display: none;
+  }
+
   .navbar .logo_desktop {
     display: none;
   }
